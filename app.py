@@ -48,8 +48,8 @@ def initiate_stk_push():
         timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
         password = base64.b64encode((business_short_code + passkey + timestamp).encode()).decode()
         party_a = phone
-        account_reference = 'Paid for Car'
-        transaction_desc = 'Hey, you paid for a car, thanks'
+        account_reference = 'Pay water Bill NAWASSCO-DEMO'
+        transaction_desc = 'Thank you and Welcome again, cc NaxWATER'
         stk_push_headers = {
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + accessToken
